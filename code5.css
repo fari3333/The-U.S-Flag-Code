@@ -1,0 +1,213 @@
+body {
+    cursor: url(pointer/1.png), auto;
+    margin: 0;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fcedd4;
+    overflow: hidden;
+  }
+  a:hover, button:hover, .clickable:hover {
+  cursor: url(pointer/2.png), pointer;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9,1fr);
+    width: 100%;
+    padding-left: auto;  
+    padding-right: auto; 
+    text-align: center;
+  }
+  .title {
+    grid-column: 3/ 9;
+    grid-row: 2/9;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-family: "itc-american-typewriter", serif;
+      font-weight: 650;
+      letter-spacing: auto;
+      line-height: 0.85;
+      max-width: 90%;
+      margin-bottom: .25rem; 
+      text-align: start;
+      margin-top: 0%;
+  }
+
+ .main-body {
+  grid-column: 3 / 9;
+  grid-row: 4/9;
+  font-size: 20px;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 250;
+  max-width: 80%;
+  line-height: 1;
+  text-align: left;
+  margin-top: 5%;
+}
+  
+.background-number {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-family: "headline-gothic-atf-rough-n1", sans-serif;
+  font-weight: 400;
+  font-size: 50rem;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -2;
+  color: #B32E2B;
+}
+
+  .svg-image {
+    position: fixed; 
+    top:42%;      
+    left: 1%;         
+    opacity: 0.75;   
+    pointer-events: none; 
+    z-index: -5;
+    size: 125%;
+  }
+.seal {
+  position: fixed;
+    top: 50px;  
+    left: 90px; 
+    width: 150px; 
+    height: 150px; 
+    z-index: 9999;
+    animation: rotateSeal 20s linear infinite;
+  }
+
+  @keyframes rotateSeal {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+a {
+  text-decoration: none;
+}
+
+  .logo{ top: 70%;
+    left: 80%;
+    position: absolute;
+  }
+  .logo:hover {
+    transform: scale(1.25);
+  }
+
+  .corner-designs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+  }
+  .top-left {
+    top: 0;
+    left: 0;
+  }
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
+
+    @media (max-width: 480px) {
+   
+      body {
+        font-size: 14px;
+      }
+      .svg-image{
+        width:5%;
+        height: auto;
+        top: 20%
+        left 90%
+      }
+    
+      .corner{
+        width: 115px;
+        height: auto;
+      }
+     
+      .seal {
+        top: 20px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px; 
+        height: 80px;
+        animation: none; 
+      }
+    
+    
+      .title {
+        font-size: 1.25rem;
+          grid-column: 2/ 9;
+          grid-row: 3/9;
+            text-transform: uppercase;
+            font-family: "itc-american-typewriter", serif;
+            font-weight: 650;
+            letter-spacing: auto;
+            line-height: 1;
+            max-width: 99%;
+            text-align: start;
+      }
+    
+      .main-body {
+        font-size: 12px;
+        grid-column: 2 / 9;
+        grid-row: 4 / 9;
+        font-family: "franklin-gothic-atf", sans-serif;
+        font-weight: 250;
+        max-width: 90%;
+        line-height: 1;
+        text-align: left;
+            margin-top: 20%;
+      }
+      .background-number {
+        font-size: 15em;
+        top: 35%;
+        left: 45%;
+      }
+      
+      .logo{ 
+        transform: scale(0.4); 
+        transform-origin: center;
+        top: 54%;
+        left: 50%;
+        position: absolute;
+        transition: transform 0.5s ease-in-out; 
+      }
+      
+      .logo:hover {
+        transform: scale(0.6);
+      }
+
+    .svg-image {
+      top: 60%;      
+      left: 30%;       
+      width: 150px;   
+      height: 100;    
+      opacity: 0.85;   
+      pointer-events: none; 
+      z-index: -5;
+    }
+    }

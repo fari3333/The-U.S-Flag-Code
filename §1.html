@@ -5,271 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>US Flag Code §1</title>
   <link rel="stylesheet" href="https://use.typekit.net/let5rjm.css">
-  
-  <style>
-
-.number  {
-  position: fixed;
-  width: 1000px;
-  top: 0;
-  left: 0;
-  font-family: Helvetica;
-  font-weight: 400;
-  color: #b02829bf;
-  font-size: 1000px;
-  letter-spacing: -130.00px;
-  line-height: normal;
-  white-space: nowrap;
-}
-/* Original CSS code should be injected here */
-
-
-@media (max-width: 1200px) {
-  .number .text-wrapper {
-    font-size: 80vw;
-    letter-spacing: -10vw;
-  }
-}
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      position: relative;
-      background: #fbf0d8;
-    }
-
-    body::before,
-    body::after {
-      content: '';
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-    }
-
-    /* Outer border */
-    body::before {
-      width: 90vw;
-      height: 90vh;
-      border: 10px solid #000;
-      z-index: 2;
-    }
-
-    /* Inner border */
-    body::after {
-      width: 85vw;
-      height: 85vh;
-      border: 5px solid #000;
-      z-index: 2;
-    }
-
-    .seal-sticker {
-      position: fixed;
-      top: 50px;  
-      left: 90px; 
-      width: 150px; 
-      height: 150px; 
-      z-index: 9999;
-      animation: rotateSeal 20s linear infinite;
-    }
-
-    @keyframes rotateSeal {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-      
-    }
-    
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-  height: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Pavanam-Regular", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color: #000000;
-}
-
-
-
-.metatext {
-  width: 145px;
-  height: 385px;
-}
-
-.metatext .part-II-regulations {
-  position: fixed;
-  width: 385px;
-  top: 0;
-  left: 0;
-  transform: rotate(-90deg);
-  font-family: "Pavanam-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  text-align: justify;
-  letter-spacing: 0;
-  line-height: 12px;
-}
-
-main.metatext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.part-II-regulations {
-  max-width: 385px;
-  transform: rotate(-90deg);
-}
-
-
-.metatext {
-  width: 145px;
-  height: 385px;
-}
-
-.metatext .part-i-design-of-the {
-  position: fixed;
-  width: 385px;
-  top: 0;
-  left: 0;
-  transform: rotate(-90deg);
-  font-family: "Pavanam-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  text-align: justify;
-  letter-spacing: 0;
-  line-height: normal;
-}
-/* Original CSS code should be injected here */
-
-.flag-specifications {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-
-.metatext {
-  width: 145px;
-  height: 385px;
-  overflow: hidden;
-  position: relative;
-}
-
-.metatext .part-i-design-of-the {
-  position: absolute;
-  width: 385px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  font-family:  Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  text-align: justify;
-  letter-spacing: 0;
-  line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .metatext {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-.image {
-  width: 100%;
-  max-width: 1000px;
-  height: 575px;
-  margin: 0 auto;
-}
-
-.image .img {
-  position: fixed;
-  width: 100%;
-  max-width: 1000px;
-  height: 575px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  object-fit: cover;
-}
-
-@media (max-width: 1000px) {
-  .image,
-  .image .img {
-    width: 100%;
-    height: auto;
-  }
-}
-  </style>
-
-  
+  <link rel="stylesheet" href="code1.css">
   
 </head>
 <body>
-  <!-- Code Seal -->
-  <img src="codenumber/1.png" 
-       class="seal-sticker" 
+  <div class="corner-designs">
+    <img src="page1corners/1.svg" class="corner top-left" alt="Top Left Corner">
+    <img src="page1corners/2.svg" class="corner top-right" alt="Top Right Corner">
+    <img src="page1corners/3.svg" class="corner bottom-left" alt="Bottom Left Corner">
+    <img src="page1corners/4.svg" class="corner bottom-right" alt="Bottom Right Corner">
+  </div>
+  
+
+  <img src="CODEstamp/1.svg" 
+       class="seal" 
        alt="Section 1 Seal">
 
-       <section class="number">
-        <h1 class="text-wrapper">§ 1</h1>
-      </section>
-
-       <main class="flag-specifications">
-        <article class="metatext">
+       <div class="container">
+        <div class="title">Flag; stripes and stars on</div>
+      <div class="main-body">
+        <p>The flag of the United States shall be thirteen horizontal stripes, alternate red and white; and the union of the flag shall be forty-eight stars, white in a blue field.</p>
        
-          <p class="part-i-design-of-the">
-            PART I—DESIGN OF THE FLAG<br />
-            SECTION 1. THE FLAG OF THE UNITED STATES SHALL HAVE THIRTEEN HORIZONTAL STRIPES, ALTERNATE RED AND WHITE, AND
-            A UNION CONSISTING OF WHITE STARS ON A FIELD OF BLUE.<br />
-            SEC. 2. THE POSITIONS OF THE STARS IN THE UNION OF THE FLAG AND IN THE UNION JACK SHALL BE AS INDICATED ON THE
-            ATTACHMENT TO THIS ORDER, WHICH IS HEREBY MADE A PART OF THIS ORDER.<br />
-            SEC. 3. THE DIMENSIONS OF THE CONSTITUENT PARTS OF THE FLAG SHALL CONFORM TO THE PROPORTIONS SET FORTH IN THE
-            ATTACHMENT REFERRED TO IN SECTION 2 OF THIS ORDER.
-          </p>
-        </article>
-       <main class="metatext">
-        <article class="part-II-regulations">
-          <p>
-            PART II—REGULATIONS GOVERNING EXECUTIVE AGENCIES<br />THE EXTERIOR DIMENSIONS OF EACH UNION JACK MANUFACTURED
-            OR PURCHASED FOR EXECUTIVE AGENCIES SHALL EQUAL THE RESPECTIVE EXTERIOR DIMENSIONS OF THE UNION OF A FLAG OF A
-            SIZE AUTHORIZED BY OR PURSUANT TO THIS ORDER. THE SIZE OF THE UNION JACK FLOWN WITH THE NATIONAL FLAG SHALL BE
-            THE SAME AS THE SIZE OF THE UNION OF THAT NATIONAL FLAG.SO FAR AS PRACTICABLE, (1) THE ACTIONS OF THE
-            SECRETARY OF DEFENSE UNDER THE PROVISIONS OF SECTION 24(A) OF THIS ORDER, AS THEY RELATE TO THE VARIOUS
-            ORGANIZATIONAL ELEMENTS OF THE DEPARTMENT OF DEFENSE, SHALL BE COORDINATED, AND (2) THE SECRETARY AND THE
-            ADMINISTRATOR SHALL MUTUALLY COORDINATE THEIR ACTIONS UNDER THAT SECTION.
-          </p>
-        </article>
-      </main>
-      <figure class="image">
-        <img class="img" src="flag1.png" alt="flag diagram" />
-      </figure>
-
-
-  </div>
-</body>
-</html>
+        <div class="background-number">§1</div>
+      
+      </div>
+      
+      <div class="svg-container">
+        <img src="images/flag1.png" alt="FLAG DIAGRAM" class="svg-image">
+      
+      </div>
+      <a href="index.html" class="logo"><img src="SVG/logo.svg" alt="logo"></a>
+    </body>

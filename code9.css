@@ -1,0 +1,268 @@
+body {
+    cursor: url(pointer/1.png), auto;
+    margin: 0;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fcedd4;
+    overflow: hidden;
+    color: #333;
+  }
+  a:hover, button:hover, .clickable:hover {
+  cursor: url(pointer/2.png), pointer;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9,1fr);
+    width: 100%;
+    padding: 20px;
+    padding-left: auto;  
+    padding-right: auto; 
+    text-align: center;
+  }
+  
+  
+  
+  .background-number {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    font-family: "headline-gothic-atf-rough-n1", sans-serif;
+    font-weight: 400;
+    font-size: 50rem;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -2;
+    color: #B32E2B;
+  }
+  
+  .seal{
+    position: fixed;
+    top: 50px;
+    left: 90px;
+    width: 150px;
+    height: 150px;
+    z-index: 9999;
+    animation: rotateSeal 20s linear infinite;
+  }
+  
+  @keyframes rotateSeal {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+    .logo{ top: 70%;
+      left: 80%;
+      position: absolute;
+    }
+    .logo:hover {
+      transform: scale(1.25);
+    }
+
+  body {
+  cursor: url(pointer/1.png), auto;
+  margin: 0;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcedd4;
+  overflow: hidden;
+}
+a:hover, button:hover, .clickable:hover {
+cursor: url(pointer/2.png), pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9,1fr);
+  width: 100%;
+  padding: 20px;
+  padding-left: auto;  
+  padding-right: auto; 
+  text-align: center;
+}
+
+  .title {
+    grid-column: 3/ 9;
+    grid-row: 2/9;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-family: "itc-american-typewriter", serif;
+      font-weight: 650;
+      letter-spacing: auto;
+      line-height: 1;
+      max-width: 90%;
+      margin-bottom: 0rem; 
+      text-align: start;
+  }
+
+ .main-body {
+  grid-column: 3 / 9;
+  grid-row: 4/9;
+  font-size: 20px;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 250;
+  max-width: 90%;
+  line-height: 1;
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+.background-number {
+  position: absolute;
+  top:15%;
+  right: 10%;
+  font-family: "headline-gothic-atf-rough-n1", sans-serif;
+  font-weight: 400;
+  font-size: 50rem;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -2;
+  color: #B32E2B;
+}
+.svg-image {
+    position: fixed; 
+    top:55%;      
+    left: 5%;       
+    width: auto;   
+    height: 50%;    
+    opacity: 0.85;   
+    pointer-events: none; 
+    z-index: -5;
+  }
+@keyframes rotateSeal {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+  .logo{ top: 70%;
+    left: 80%;
+    position: absolute;
+  }
+  .logo:hover {
+    transform: scale(1.25);
+  }
+
+  .corner-designs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+  }
+  .top-left {
+    top: 0;
+    left: 0;
+  }
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
+  @media (max-width: 420px) {
+    body {
+      font-size: 14px;
+      overflow: auto;
+    }
+    .svg-image{
+      width:260px;
+      top: 68%;
+      left:25px;
+      opacity: 0.85;
+z-index: 10;
+
+    }
+    .seal {
+        top: 20px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px; 
+        height: 80px;
+        animation: none; 
+      }
+    .corner{
+      width: 100px;
+      height: auto;
+    }
+   
+  
+    .title {
+      font-size: 1.25rem;
+        grid-column: 2/ 9;
+        grid-row: 3/9;
+          text-transform: uppercase;
+          font-family: "itc-american-typewriter", serif;
+          font-weight: 650;
+          letter-spacing: auto;
+          line-height: 1;
+          max-width: 99%;
+          text-align: start;
+          margin-top: 0%;
+    }
+  
+    .background-number {
+      font-size: 15em;
+      top: 45%;
+      left: 40%
+      
+    }
+    .main-body {
+      font-size: 10px;
+      grid-column: 2/ 9;
+      grid-row:4/9;
+      font-size: 12px;
+      font-family: "franklin-gothic-atf", sans-serif;
+      font-weight: 250;
+      max-width: 99%;
+      line-height: 1;
+      text-align: left;
+    margin-top:  5%;
+  }
+  .logo{ 
+    transform: scale(0.4); 
+    transform-origin: center;
+    top: 62%;
+    left: 50%;
+    position: absolute;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  .logo:hover {
+    transform: scale(0.6);
+  }
+  }
