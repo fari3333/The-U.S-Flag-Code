@@ -16,13 +16,13 @@ a:hover, button:hover, .clickable:hover {
   text-align: center;
   padding: 50px 0;
   position: relative;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 100%; /* Prevents unwanted shifting */
+  width: 100%; 
 }
 
 .arched-text {
