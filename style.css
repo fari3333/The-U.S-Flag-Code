@@ -169,7 +169,7 @@ z-index: -1
 }
 .asset3
 { top: 75%;
-left: 5%;
+left: 30%;
 position: fixed;
 z-index: -1
 }
@@ -257,22 +257,22 @@ z-index: -1
     height: auto;
 }
 .asset1{
-  width: 125px; 
+  width: 145px; 
   height: auto; 
-  top: 85%;
+  top: 80%;
   left: 30%;
 }
 .asset2{
   width: 60px; 
   height: auto; 
-  top: 44%;
-  left: 44%;
+  top: 43%;
+  left: 40%;
 }
 .asset3{  
-  width: 40px; 
+  width: 50px; 
   height: auto; 
-  top: 40%;
-  left: 85%;
+  top: 20%;
+  left: 80%;
 }
 .asset4{  
   width: 90px; 
